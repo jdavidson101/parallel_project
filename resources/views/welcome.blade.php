@@ -29,12 +29,12 @@
                 display: flex;
                 justify-content: center;
             }
-
+.p
             .position-ref {
                 position: relative;
             }
 
-            .top-right {
+            .top-right {c/e
                 position: absolute;
                 right: 10px;
                 top: 18px;

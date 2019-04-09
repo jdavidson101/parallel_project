@@ -13,7 +13,7 @@
 	
 	<!--Linking files-->
 	<link rel="stylesheet" href="cssStyle.css">
-	<script type="text/javascript" src="{{ URL::asset('js/firstD3Script.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('js/colormap.js') }}"></script>
 	<!----------------->
 	)
 	
