@@ -18,3 +18,15 @@ Route::get('/', function () {
 Route::get('/home', function() {
 	return view('home');
 });
+
+Route::get('/intro', function() {
+	return view('intro');
+});
+
+Route::get('/colormap', function() {
+	return view('colormap');
+});
+
+Route::get('/histogram', function() {
+	return view('histogram');
+});

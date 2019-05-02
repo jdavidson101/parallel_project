@@ -7,7 +7,12 @@
         "watch-poll": "npm run watch -- --watch-poll",
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "browserify": "browserify -r ./public/js/jsdom_capsule:jsdom_capsule > ./public/js/jsdom_browserify.js",
+        "intro": "browserify ./public/js/main.js -o ./public/js/bundle.js",
+        "start": "npm run browserify && npm run build && npm run server",
+        "build": "gulp browserify",
+        "server": "php artisan serve"
     },
     "devDependencies": {
         "axios": "^0.18",
@@ -21,5 +26,12 @@
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
         "vue": "^2.5.17"
+    },
+    "dependencies": {
+        "browserify": "^16.2.3",
+        "gulp": "^4.0.0",
+        "jsdom": "10.0.0",
+        "ramda": "^0.26.1",
+        "vinyl-source-stream": "^2.0.0"
     }
 }

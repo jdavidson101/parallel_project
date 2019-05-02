@@ -12,25 +12,21 @@
 	<!----------------->
 	
 	<!--Linking files-->
-	<link rel="stylesheet" href="cssStyle.css">
+	<!-- <link rel="stylesheet" href="cssStyle.css"> -->
+	<!-- <script type="text/javascript" src="{{ URL::asset('data/bed_rgb.js') }}"></script> -->
 	<script type="text/javascript" src="{{ URL::asset('js/colormap.js') }}"></script>
 	<!----------------->
-	)
 	
 	
 </head>
 <body>
 
 	<div id="container">
-		<center>
-		<button type="button" class="dataButtons">bed</button>
-		<button type="button" class="dataButtons">smb</button>
-		<button type="button" class="dataButtons">surface</button>
-		<button type="button" class="dataButtons">t2m</button>
-		<button type="button" class="dataButtons">thickness</button>
-		<button type="button" class="dataButtons">velocity</button>
-		</center>
+		<a>Histogram</a>
+		<a>ColorMap</a>
 	</div>
+	<!-- <canvas id="chart"></canvas> -->
+	<!-- <canvas id="raster" style="display: none"></canvas> -->
 
 </body>
 </html>
